@@ -1,10 +1,10 @@
 package login;
 
 
-import org.junit.Assert;
+
+import org.testng.Assert;
 
 import tests.BaseTest;
-
 
 public class LoginAssertions {
 	Login page =new  Login();
