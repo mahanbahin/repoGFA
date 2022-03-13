@@ -15,12 +15,31 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- tests.StorageLocationTest -->
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="startDevice"/>
+          <include name="loginToApp"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.DashboardTest">
+        <methods>
+          <include name="navigateToInvoentoryCounts"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.DashboardTest -->
       <class name="tests.AdditionTest">
         <methods>
           <include name="addingTwoIntNo"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- tests.AdditionTest -->
+      <class name="tests.InventoryCountTest">
+        <methods>
+          <include name="goToFirstCount"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.InventoryCountTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,6 +1,7 @@
 package configurations;
 
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -19,6 +20,9 @@ public class Hooks {
 		DesiredCapabilities caps = new DesiredCapabilities();
 
 		/*File appFolder = new File("src");
+=======
+		File appFolder = new File("src");
+>>>>>>> 51f7b1e46a59cfe6bed2ab0d2e261863bf72f988
 		File app = new File(appFolder, "app.apk");
 		
 		caps.setCapability("deviceName", "zaroqi");
@@ -26,6 +30,7 @@ public class Hooks {
 		caps.setCapability("app", app.getAbsolutePath());
 		caps.setCapability( "noReset", true);
 		caps.setCapability( "automatioName","uiautomator2");
+<<<<<<< HEAD
 */
 		caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UIAutomator2");
 		caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");

@@ -4,10 +4,11 @@ import java.util.Random;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import Item.ItemActions;
 import Item.ItemAssertions;
 
-public class AdditionTest {
+public class MultiplyTest {
 
 	ItemActions itemActions;
 	ItemAssertions itemAssertions;
@@ -26,25 +27,23 @@ public class AdditionTest {
 	}
 	
 	@Test
-	public void addingTwoIntNo() throws Throwable {
+	public void multiplyTwoIntNo() throws Throwable {
 		int num1 = getRandomInteger();
 		int num2 = getRandomInteger();
 		
 		itemActions
 		.clearInput()
 		.clickNum(num1)
-		.clicAdd()
+		.clickMultiply()
 		.clickNum(num2);
 		
 		itemAssertions
-		.verifyCalculatorInputValueReflected(num1, num2, "+");
+		.verifyCalculatorInputValueReflected(num1, num2, "*");
 		
 		itemActions
 		.clickClose();
 		
-		itemAssertions.verifyCalculatorOutput(num1, num2, "+");
+		itemAssertions.verifyCalculatorOutput(num1, num2, "*");
 		
 	}
-	
-	
 }

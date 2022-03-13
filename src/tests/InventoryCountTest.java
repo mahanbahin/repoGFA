@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import InventoryCount.InventoryCountActions;
 
 public class InventoryCountTest  {
+
 	InventoryCountActions inventoryCountActions;
 	
 	@BeforeClass
@@ -15,6 +16,7 @@ public class InventoryCountTest  {
 	
 	@Test
 	public void goToFirstCount() throws Throwable {
+		Thread.sleep(5000);
 		inventoryCountActions
 		.clickFirstCount();
 	

@@ -50,5 +50,20 @@ public class Item extends BaseTest{
 	@AndroidFindBy(id = "et_unit_amount_1")
 	 protected MobileElement calculatorInput;
 
+	@AndroidFindBy(id = "btn_backspace")
+	 protected MobileElement backspaceBtn;
+
+	@AndroidFindBy(id = "tv_unit")
+	 protected MobileElement quantity;
+	
+	@AndroidFindBy(id = "tv_total_cost")
+	 protected MobileElement totalPrice;
+	
+	@AndroidFindBy(id = "tv_count_total")
+	 protected MobileElement totalCount;
+	
+	@AndroidFindBy(id = "tv_cost")
+	 protected MobileElement price;
+	
 }
 

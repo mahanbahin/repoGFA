@@ -1,5 +1,6 @@
 package Item;
 
+import java.util.Iterator;
 
 public class ItemActions{
 
@@ -59,7 +60,20 @@ public class ItemActions{
 		page.addBtn.click();
 		return this;
 	}
+	
+	public ItemActions clicBackspace() {
+		page.backspaceBtn.click();
+		return this;
+	}
 	 
+	public ItemActions clearInput() {
+	//	page.calculatorInput.clear();
+		int num = page.calculatorInput.getText().length();
+		for(int i=0; i<num;i++)
+			clicBackspace();
+		return this;
+	}
+	
 	
 }
 

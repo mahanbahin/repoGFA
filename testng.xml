@@ -9,7 +9,7 @@
        <class name="tests.StorageLocationTest"/>
         <class name="tests.InventoryItemsTest"/>
         <class name="tests.AdditionTest"/>
-       
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
