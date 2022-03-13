@@ -1,7 +1,5 @@
 package login;
 
-
-
 import org.testng.Assert;
 
 import tests.BaseTest;

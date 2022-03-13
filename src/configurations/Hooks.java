@@ -1,14 +1,15 @@
 package configurations;
 
 
-import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+
 import io.appium.java_client.remote.MobileCapabilityType;
+
 
 @SuppressWarnings("rawtypes")
 public class Hooks {
@@ -16,6 +17,7 @@ public class Hooks {
 	
 	public AndroidDriver<MobileElement> driverSetUp(AndroidDriver<MobileElement> driver) {
 		DesiredCapabilities caps = new DesiredCapabilities();
+
 		/*File appFolder = new File("src");
 		File app = new File(appFolder, "app.apk");
 		
@@ -34,6 +36,7 @@ public class Hooks {
 
 		try {
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+
 		} catch (MalformedURLException e) {
 			System.out.println(e.getMessage());
 		}

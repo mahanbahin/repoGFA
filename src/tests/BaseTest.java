@@ -10,14 +10,12 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 
-
 import configurations.Hooks;
 
 public class BaseTest {
 
 	public static AndroidDriver<MobileElement> driver;
 
-	
 	public BaseTest() {	
 		PageFactory.initElements(new AppiumFieldDecorator(BaseTest.driver), this);
 	}

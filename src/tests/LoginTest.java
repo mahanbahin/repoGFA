@@ -8,11 +8,13 @@ public class LoginTest extends BaseTest{
 
 	LoginActions loginActions;
 	LoginAssertions loginAssertions;
+	
 	@BeforeClass
 	public void beforeClass() {
 		loginActions = new LoginActions();
 		loginAssertions = new LoginAssertions();
 	}
+
 
 	@Test
 	public void loginToApp() throws InterruptedException {

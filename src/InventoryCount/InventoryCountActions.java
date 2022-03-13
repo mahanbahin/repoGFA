@@ -1,6 +1,5 @@
 package InventoryCount;
 
-
 public class InventoryCountActions {
 	
 	InventoryCount page = new InventoryCount();
@@ -9,4 +8,5 @@ public class InventoryCountActions {
 		page.firstInvnetoryCountArrow.click();
 		return this;
 	}
+
 }

@@ -27,7 +27,8 @@ public class AdditionTest {
 		itemActions
 		.clickNum(getRandomInteger())
 		.clicAdd()
-		.clickNum(getRandomInteger());
+		.clickNum(getRandomInteger())
+		.clickClose();
 		
 	}
 }

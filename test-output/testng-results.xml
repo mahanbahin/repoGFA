@@ -2,70 +2,70 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-13T21:19:55 EET" name="Suite" finished-at="2022-03-13T21:21:10 EET" duration-ms="75039">
+  <suite started-at="2022-03-13T21:43:21 EET" name="Suite" finished-at="2022-03-13T21:45:01 EET" duration-ms="99930">
     <groups>
     </groups>
-    <test started-at="2022-03-13T21:19:55 EET" name="Test" finished-at="2022-03-13T21:21:10 EET" duration-ms="75039">
+    <test started-at="2022-03-13T21:43:21 EET" name="Test" finished-at="2022-03-13T21:45:01 EET" duration-ms="99930">
       <class name="tests.LoginTest">
-        <test-method is-config="true" signature="startDevice()[pri:0, instance:tests.LoginTest@298a5e20]" started-at="2022-03-13T21:19:55 EET" name="startDevice" finished-at="2022-03-13T21:20:23 EET" duration-ms="27441" status="PASS">
+        <test-method is-config="true" signature="startDevice()[pri:0, instance:tests.LoginTest@298a5e20]" started-at="2022-03-13T21:43:21 EET" name="startDevice" finished-at="2022-03-13T21:43:54 EET" duration-ms="33142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDevice -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.LoginTest@298a5e20]" started-at="2022-03-13T21:20:23 EET" name="beforeClass" finished-at="2022-03-13T21:20:23 EET" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.LoginTest@298a5e20]" started-at="2022-03-13T21:43:54 EET" name="beforeClass" finished-at="2022-03-13T21:43:55 EET" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="loginToApp()[pri:0, instance:tests.LoginTest@298a5e20]" started-at="2022-03-13T21:20:23 EET" name="loginToApp" finished-at="2022-03-13T21:20:48 EET" duration-ms="25044" status="PASS">
+        <test-method signature="loginToApp()[pri:0, instance:tests.LoginTest@298a5e20]" started-at="2022-03-13T21:43:55 EET" name="loginToApp" finished-at="2022-03-13T21:44:39 EET" duration-ms="44401" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
       </class> <!-- tests.LoginTest -->
       <class name="tests.InventoryCountTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.InventoryCountTest@1ed4ae0f]" started-at="2022-03-13T21:20:59 EET" name="beforeClass" finished-at="2022-03-13T21:20:59 EET" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.InventoryCountTest@1ed4ae0f]" started-at="2022-03-13T21:44:49 EET" name="beforeClass" finished-at="2022-03-13T21:44:49 EET" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="goToFirstCount()[pri:0, instance:tests.InventoryCountTest@1ed4ae0f]" started-at="2022-03-13T21:20:59 EET" name="goToFirstCount" finished-at="2022-03-13T21:21:00 EET" duration-ms="1247" status="PASS">
+        <test-method signature="goToFirstCount()[pri:0, instance:tests.InventoryCountTest@1ed4ae0f]" started-at="2022-03-13T21:44:49 EET" name="goToFirstCount" finished-at="2022-03-13T21:44:50 EET" duration-ms="1730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToFirstCount -->
       </class> <!-- tests.InventoryCountTest -->
       <class name="tests.StorageLocationTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.StorageLocationTest@54c5a2ff]" started-at="2022-03-13T21:21:00 EET" name="beforeClass" finished-at="2022-03-13T21:21:00 EET" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.StorageLocationTest@54c5a2ff]" started-at="2022-03-13T21:44:50 EET" name="beforeClass" finished-at="2022-03-13T21:44:50 EET" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.StorageLocationTest@54c5a2ff]" started-at="2022-03-13T21:21:00 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-13T21:21:05 EET" duration-ms="5257" status="PASS">
+        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.StorageLocationTest@54c5a2ff]" started-at="2022-03-13T21:44:50 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-13T21:44:56 EET" duration-ms="5634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToInvoentoryCounts -->
       </class> <!-- tests.StorageLocationTest -->
       <class name="tests.InventoryItemsTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.InventoryItemsTest@6d4d66d2]" started-at="2022-03-13T21:21:05 EET" name="beforeClass" finished-at="2022-03-13T21:21:05 EET" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.InventoryItemsTest@6d4d66d2]" started-at="2022-03-13T21:44:56 EET" name="beforeClass" finished-at="2022-03-13T21:44:56 EET" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.InventoryItemsTest@6d4d66d2]" started-at="2022-03-13T21:21:05 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-13T21:21:07 EET" duration-ms="1284" status="PASS">
+        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.InventoryItemsTest@6d4d66d2]" started-at="2022-03-13T21:44:56 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-13T21:44:57 EET" duration-ms="770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToInvoentoryCounts -->
       </class> <!-- tests.InventoryItemsTest -->
       <class name="tests.AdditionTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.AdditionTest@2a265ea9]" started-at="2022-03-13T21:21:07 EET" name="beforeClass" finished-at="2022-03-13T21:21:07 EET" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.AdditionTest@2a265ea9]" started-at="2022-03-13T21:44:57 EET" name="beforeClass" finished-at="2022-03-13T21:44:57 EET" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="addingTwoIntNo()[pri:0, instance:tests.AdditionTest@2a265ea9]" started-at="2022-03-13T21:21:07 EET" name="addingTwoIntNo" finished-at="2022-03-13T21:21:10 EET" duration-ms="3571" status="PASS">
+        <test-method signature="addingTwoIntNo()[pri:0, instance:tests.AdditionTest@2a265ea9]" started-at="2022-03-13T21:44:57 EET" name="addingTwoIntNo" finished-at="2022-03-13T21:45:01 EET" duration-ms="4161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingTwoIntNo -->
       </class> <!-- tests.AdditionTest -->
       <class name="tests.DashboardTest">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.DashboardTest@7526515b]" started-at="2022-03-13T21:20:48 EET" name="beforeClass" finished-at="2022-03-13T21:20:48 EET" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.DashboardTest@7526515b]" started-at="2022-03-13T21:44:39 EET" name="beforeClass" finished-at="2022-03-13T21:44:39 EET" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.DashboardTest@7526515b]" started-at="2022-03-13T21:20:48 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-13T21:20:59 EET" duration-ms="10773" status="PASS">
+        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.DashboardTest@7526515b]" started-at="2022-03-13T21:44:39 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-13T21:44:49 EET" duration-ms="9552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToInvoentoryCounts -->
