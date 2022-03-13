@@ -1,14 +1,11 @@
 package tests;
 
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
 import login.LoginActions;
 import login.LoginAssertions;
+import org.testng.annotations.*;
 
 public class LoginTest extends BaseTest{
-//y	LoginActions loginActions = new LoginActions();
-//	LoginAssertions loginAssertions = new LoginAssertions();
-	
+
 	LoginActions loginActions;
 	LoginAssertions loginAssertions;
 	@BeforeClass
@@ -18,7 +15,7 @@ public class LoginTest extends BaseTest{
 	}
 
 	@Test
-	public void loginToApp() throws Throwable {
+	public void loginToApp() throws InterruptedException {
 		loginActions
 		.typeInUserName("tester2")
 		.clickNextButton()
@@ -29,8 +26,6 @@ public class LoginTest extends BaseTest{
 		.verifyDashboard();
 		System.out.println("Assertion Successfully");
 	}
-	
-	
 	
 
 }
