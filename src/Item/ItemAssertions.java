@@ -2,8 +2,10 @@ package Item;
 
 import org.testng.Assert;
 
+import tests.BaseTest;
+
 public class ItemAssertions {
-	Item page =new  Item();
+	Item page = new Item();
 
 	public ItemAssertions verifyCalculatorInputValueReflected(int num1 , int num2, String operator) throws InterruptedException {
 	/*	String res=0;
@@ -23,17 +25,13 @@ public class ItemAssertions {
 	
 	
 	public ItemAssertions verifyCalculatorOutput(int num1 , int num2, String operator)  {
-		
-		int start = page.price.getText().indexOf("$");
-		int stop = page.price.getText().indexOf("/");
-		String res = page.price.getText().substring(start, stop);
-		
-		int price = Integer.parseInt(res);
+		BaseTest.waitVisibilityOf(page.price);
+		int price = Integer.parseInt( page.price.getText().substring(page.price.getText().indexOf("$")+1, page.price.getText().indexOf("/")));
 		System.out.println(price);
 		int quantity = Integer.parseInt(page.quantity.getText().split(" ")[0]);
-		int totalprice = Integer.parseInt(page.totalPrice.getText().split("$")[0]);
+		int totalprice = Integer.parseInt(page.totalPrice.getText().substring(page.totalPrice.getText().indexOf("$")+1));
 		System.out.println(totalprice);
-		int totalcount = Integer.parseInt(page.totalCount.getText().split("$")[0]);
+		int totalcount = Integer.parseInt(page.totalCount.getText().substring(page.totalCount.getText().indexOf("$")+1));
 		System.out.println(totalcount);
 		
 		int expectedRes=0;

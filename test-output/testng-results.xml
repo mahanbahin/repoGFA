@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-14T10:19:09 EET" name="Suite" finished-at="2022-03-14T10:20:20 EET" duration-ms="71382">
+    <groups>
+    </groups>
+    <test started-at="2022-03-14T10:19:09 EET" name="Test" finished-at="2022-03-14T10:20:20 EET" duration-ms="71382">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="startDevice()[pri:0, instance:tests.LoginTest@7b98f307]" started-at="2022-03-14T10:19:09 EET" name="startDevice" finished-at="2022-03-14T10:19:28 EET" duration-ms="19081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDevice -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.LoginTest@7b98f307]" started-at="2022-03-14T10:19:28 EET" name="beforeClass" finished-at="2022-03-14T10:19:28 EET" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="loginToApp()[pri:0, instance:tests.LoginTest@7b98f307]" started-at="2022-03-14T10:19:28 EET" name="loginToApp" finished-at="2022-03-14T10:19:51 EET" duration-ms="22920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToApp -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.InventoryCountTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.InventoryCountTest@397fbdb]" started-at="2022-03-14T10:20:01 EET" name="beforeClass" finished-at="2022-03-14T10:20:01 EET" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="goToFirstCount()[pri:0, instance:tests.InventoryCountTest@397fbdb]" started-at="2022-03-14T10:20:01 EET" name="goToFirstCount" finished-at="2022-03-14T10:20:06 EET" duration-ms="5246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToFirstCount -->
+      </class> <!-- tests.InventoryCountTest -->
+      <class name="tests.StorageLocationTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.StorageLocationTest@33d512c1]" started-at="2022-03-14T10:20:06 EET" name="beforeClass" finished-at="2022-03-14T10:20:06 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.StorageLocationTest@33d512c1]" started-at="2022-03-14T10:20:06 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-14T10:20:12 EET" duration-ms="5168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToInvoentoryCounts -->
+      </class> <!-- tests.StorageLocationTest -->
+      <class name="tests.InventoryItemsTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.InventoryItemsTest@515c6049]" started-at="2022-03-14T10:20:12 EET" name="beforeClass" finished-at="2022-03-14T10:20:12 EET" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.InventoryItemsTest@515c6049]" started-at="2022-03-14T10:20:12 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-14T10:20:13 EET" duration-ms="988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToInvoentoryCounts -->
+      </class> <!-- tests.InventoryItemsTest -->
+      <class name="tests.AdditionTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.AdditionTest@639c2c1d]" started-at="2022-03-14T10:20:13 EET" name="beforeClass" finished-at="2022-03-14T10:20:13 EET" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="addingTwoIntNo()[pri:0, instance:tests.AdditionTest@639c2c1d]" started-at="2022-03-14T10:20:13 EET" name="addingTwoIntNo" finished-at="2022-03-14T10:20:20 EET" duration-ms="7464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addingTwoIntNo -->
+      </class> <!-- tests.AdditionTest -->
+      <class name="tests.DashboardTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.DashboardTest@3590fc5b]" started-at="2022-03-14T10:19:51 EET" name="beforeClass" finished-at="2022-03-14T10:19:51 EET" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="navigateToInvoentoryCounts()[pri:0, instance:tests.DashboardTest@3590fc5b]" started-at="2022-03-14T10:19:51 EET" name="navigateToInvoentoryCounts" finished-at="2022-03-14T10:20:01 EET" duration-ms="10359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToInvoentoryCounts -->
+      </class> <!-- tests.DashboardTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

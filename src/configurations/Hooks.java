@@ -10,7 +10,6 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
 
-@SuppressWarnings("rawtypes")
 
 public class Hooks {
 		
@@ -25,13 +24,13 @@ public class Hooks {
 		caps.setCapability("deviceName", "Android Device");
 		caps.setCapability("platformName", "Android");
 		caps.setCapability("app", app.getAbsolutePath());
-		caps.setCapability("noReset", true);
+//		caps.setCapability("noReset", true);
 		caps.setCapability( "automatioName","UiAutomator2");
 		caps.setCapability("appActivity", "com.restaurant365.ui.splash.SplashActivity");
 		caps.setCapability("appPackage", "com.restaurant365.dev");
 
 		try {
-			driver = new AndroidDriver<MobileElement>(new URL("http://0.0.0.0:4723/wd/hub"), caps);
+			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), caps);
 
 		} catch (MalformedURLException e) {
 			System.out.println(e.getMessage());

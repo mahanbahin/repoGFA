@@ -1,11 +1,6 @@
 package StorageLocations;
 
 
-
-import org.testng.Assert;
-
-import tests.BaseTest;
-
 public class StorageLocationAssertions {
 	StorageLocation page =new  StorageLocation();
 

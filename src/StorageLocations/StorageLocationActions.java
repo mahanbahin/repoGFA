@@ -1,6 +1,5 @@
 package StorageLocations;
 
-import tests.BaseTest;
 
 public class StorageLocationActions{
 
