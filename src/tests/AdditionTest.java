@@ -1,34 +1,31 @@
 package tests;
 
-import java.util.Random;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import Item.ItemActions;
 import Item.ItemAssertions;
+import R356Util.R356Util;
 
 public class AdditionTest {
 
 	ItemActions itemActions;
 	ItemAssertions itemAssertions;
+	R356Util utils;
+
 	
 	@BeforeClass
 	public void beforeClass() {
+		utils = new R356Util();
 		itemActions = new ItemActions();
 		itemAssertions = new ItemAssertions();
 	}
 
-	public int getRandomInteger() {
-		Random random = new Random();
-		int num = random.nextInt(10);
-		System.out.println(num);
-		return num;
-	}
 	
 	@Test
 	public void addingTwoIntNo() throws Throwable {
-		int num1 = getRandomInteger();
-		int num2 = getRandomInteger();
+		int num1 = utils.getRandomInteger();
+		int num2 = utils.getRandomInteger();
 		
 		itemActions
 		.clearInput()

@@ -8,7 +8,7 @@ import tests.BaseTest;
 public class InventoryItems extends BaseTest{
 
 	@AndroidFindBy(id = "iv_arrow")
-	 protected MobileElement inventoryArrow;
+	 protected MobileElement itemArrowLink;
 	
 	
 }

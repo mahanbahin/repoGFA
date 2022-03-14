@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.AdditionTest" class="method navigator-link" hash-for-method="addingTwoIntNo">addingTwoIntNo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.MultiplyTest" class="method navigator-link" hash-for-method="multiplyTwoIntNo">multiplyTwoIntNo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +121,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.AdditionTest" class="method navigator-link" hash-for-method="addingTwoIntNo">addingTwoIntNo</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.InventoryCountTest" class="method navigator-link" hash-for-method="goToFirstCount">goToFirstCount</a> <!-- method navigator-link -->
@@ -119,17 +133,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.StorageLocationTest" class="method navigator-link" hash-for-method="navigateToInvoentoryCounts">navigateToInvoentoryCounts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.InventoryItemsTest" class="method navigator-link" hash-for-method="navigateToInvoentoryCounts">navigateToInvoentoryCounts</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.DashboardTest" class="method navigator-link" hash-for-method="navigateToInvoentoryCounts">navigateToInvoentoryCounts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.InventoryItemsTest" class="method navigator-link" hash-for-method="navigateToItem">navigateToItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.StorageLocationTest" class="method navigator-link" hash-for-method="navigateToLocationStorageItems">navigateToLocationStorageItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -144,24 +158,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.StorageLocationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateToInvoentoryCounts">
-                  </a> <!-- navigateToInvoentoryCounts -->
-                  <span class="method-name">navigateToInvoentoryCounts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.AdditionTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -170,6 +169,80 @@
                   <a name="addingTwoIntNo">
                   </a> <!-- addingTwoIntNo -->
                   <span class="method-name">addingTwoIntNo</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: The element &apos;By.id: tv_cost&apos; is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-N1F5L0C&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: D:\QA\repoGFA\src\app.apk, appActivity: com.restaurant365.ui.splash..., appPackage: com.restaurant365.dev, automatioName: UiAutomator2, databaseEnabled: false, desired: {app: D:\QA\repoGFA\src\app.apk, appActivity: com.restaurant365.ui.splash..., appPackage: com.restaurant365.dev, automatioName: UiAutomator2, deviceName: Android Device, platformName: android}, deviceApiLevel: 26, deviceManufacturer: HUAWEI, deviceModel: LDN-L21, deviceName: 26EBB18724164311, deviceScreenDensity: 320, deviceScreenSize: 720x1440, deviceUDID: 26EBB18724164311, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1312, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 77b44528-4099-4333-95a5-d3b188e79550
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at tests.BaseTest.waitVisibilityOf(BaseTest.java:32)
+	at Item.ItemAssertions.verifyCalculatorOutput(ItemAssertions.java:20)
+	at tests.AdditionTest.addingTwoIntNo(AdditionTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.MultiplyTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="multiplyTwoIntNo">
+                  </a> <!-- multiplyTwoIntNo -->
+                  <span class="method-name">multiplyTwoIntNo</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;1,200&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at Item.ItemAssertions.verifyCalculatorOutput(ItemAssertions.java:26)
+	at tests.MultiplyTest.multiplyTwoIntNo(MultiplyTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.StorageLocationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToLocationStorageItems">
+                  </a> <!-- navigateToLocationStorageItems -->
+                  <span class="method-name">navigateToLocationStorageItems</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,9 +300,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="navigateToInvoentoryCounts">
-                  </a> <!-- navigateToInvoentoryCounts -->
-                  <span class="method-name">navigateToInvoentoryCounts</span>
+                  <a name="navigateToItem">
+                  </a> <!-- navigateToItem -->
+                  <span class="method-name">navigateToItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,6 +325,7 @@
       &lt;class name=&quot;tests.StorageLocationTest&quot;/&gt;
       &lt;class name=&quot;tests.InventoryItemsTest&quot;/&gt;
       &lt;class name=&quot;tests.AdditionTest&quot;/&gt;
+      &lt;class name=&quot;tests.MultiplyTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -265,7 +339,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (6 classes)</span>
+                <span class="test-name">Test (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -291,36 +365,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginToApp')
 data.setCell(0, 2, 'tests.LoginTest')
-data.setCell(0, 3, 22920);
+data.setCell(0, 3, 20373);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'navigateToInvoentoryCounts')
 data.setCell(1, 2, 'tests.DashboardTest')
-data.setCell(1, 3, 10359);
+data.setCell(1, 3, 9796);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'addingTwoIntNo')
 data.setCell(2, 2, 'tests.AdditionTest')
-data.setCell(2, 3, 7464);
+data.setCell(2, 3, 8809);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'goToFirstCount')
-data.setCell(3, 2, 'tests.InventoryCountTest')
-data.setCell(3, 3, 5246);
+data.setCell(3, 1, 'multiplyTwoIntNo')
+data.setCell(3, 2, 'tests.MultiplyTest')
+data.setCell(3, 3, 7991);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'navigateToInvoentoryCounts')
-data.setCell(4, 2, 'tests.StorageLocationTest')
-data.setCell(4, 3, 5168);
+data.setCell(4, 1, 'goToFirstCount')
+data.setCell(4, 2, 'tests.InventoryCountTest')
+data.setCell(4, 3, 5235);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'navigateToInvoentoryCounts')
-data.setCell(5, 2, 'tests.InventoryItemsTest')
-data.setCell(5, 3, 988);
+data.setCell(5, 1, 'navigateToLocationStorageItems')
+data.setCell(5, 2, 'tests.StorageLocationTest')
+data.setCell(5, 3, 5153);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'navigateToItem')
+data.setCell(6, 2, 'tests.InventoryItemsTest')
+data.setCell(6, 3, 2510);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 seconds</span>
+              <span class="suite-total-time">Total running time: 59 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -353,66 +431,81 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">19082 ms</span>
+                <span class="method-start">44437 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginToApp</span>
-                <span class="method-start">19188 ms</span>
+                <span class="method-start">44535 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.DashboardTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">42113 ms</span>
+                <span class="method-start">64913 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">navigateToInvoentoryCounts</span>
-                <span class="method-start">42115 ms</span>
+                <span class="method-start">64916 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.InventoryCountTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">52475 ms</span>
+                <span class="method-start">74714 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">goToFirstCount</span>
-                <span class="method-start">52487 ms</span>
+                <span class="method-start">74726 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.StorageLocationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">57734 ms</span>
+                <span class="method-start">79962 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">navigateToInvoentoryCounts</span>
-                <span class="method-start">57735 ms</span>
+                <span class="method-name">navigateToLocationStorageItems</span>
+                <span class="method-start">79964 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.InventoryItemsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">62904 ms</span>
+                <span class="method-start">85119 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">navigateToInvoentoryCounts</span>
-                <span class="method-start">62906 ms</span>
+                <span class="method-name">navigateToItem</span>
+                <span class="method-start">85122 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AdditionTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">63895 ms</span>
+                <span class="method-start">87633 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">addingTwoIntNo</span>
-                <span class="method-start">63901 ms</span>
+                <span class="method-start">87641 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MultiplyTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">96451 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">multiplyTwoIntNo</span>
+                <span class="method-start">96455 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

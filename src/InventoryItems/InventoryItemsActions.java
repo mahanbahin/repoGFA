@@ -4,8 +4,8 @@ public class InventoryItemsActions{
 
 	InventoryItems page =new  InventoryItems();
 
-	public InventoryItemsActions clickinventoryArrowLink() {
-		page.inventoryArrow.click();
+	public InventoryItemsActions clickItemArrowLink() {
+		page.itemArrowLink.click();
 		return this;
 	}
 	

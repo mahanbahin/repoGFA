@@ -15,9 +15,9 @@ public class InventoryItemsTest {
 	}
 
 	@Test
-	public void navigateToInvoentoryCounts() throws Throwable {
+	public void navigateToItem() throws Throwable {
 		inventoryItemsActions
-		.clickinventoryArrowLink();
+		.clickItemArrowLink();
 		
 		System.out.println("clicked inventory");
 		

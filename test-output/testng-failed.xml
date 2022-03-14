@@ -9,6 +9,12 @@
           <include name="beforeClass"/>
         </methods>
       </class> <!-- tests.AdditionTest -->
+      <class name="tests.MultiplyTest">
+        <methods>
+          <include name="multiplyTwoIntNo"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.MultiplyTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

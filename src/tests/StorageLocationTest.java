@@ -15,7 +15,7 @@ public class StorageLocationTest {
 	}
 
 	@Test
-	public void navigateToInvoentoryCounts() throws Throwable {
+	public void navigateToLocationStorageItems() throws Throwable {
 		Thread.sleep(5000);
 		storageLocationActions
 		.clickstorageLocationLink();
