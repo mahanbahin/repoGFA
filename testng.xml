@@ -6,6 +6,10 @@
       <class name="tests.LoginTest"/>
       <class name="tests.DashboardTest"/>
       <class name="tests.InventoryCountTest"/>
+       <class name="tests.StorageLocationTest"/>
+        <class name="tests.InventoryItemsTest"/>
+        <class name="tests.AdditionTest"/>
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

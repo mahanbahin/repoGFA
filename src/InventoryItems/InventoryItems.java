@@ -1,13 +1,15 @@
-package InventoryCount;
+package InventoryItems;
 
-import java.util.List;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import tests.BaseTest;
 
-public class InventoryCount  extends BaseTest{
-	
+public class InventoryItems extends BaseTest{
+
 	@AndroidFindBy(id = "iv_arrow")
-	protected List<MobileElement> firstInvnetoryCountArrow;
+	 protected MobileElement inventoryArrow;
+	
+	
 }
+

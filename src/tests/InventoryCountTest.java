@@ -15,6 +15,7 @@ public class InventoryCountTest {
 	
 	@Test
 	public void goToFirstCount() throws Throwable {
+		Thread.sleep(5000);
 		inventoryCountActions
 		.clickFirstCount();
 	

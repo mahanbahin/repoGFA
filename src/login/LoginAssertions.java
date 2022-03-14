@@ -1,9 +1,7 @@
 package login;
 
 
-
 import org.testng.Assert;
-
 import tests.BaseTest;
 
 public class LoginAssertions {

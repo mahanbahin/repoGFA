@@ -1,6 +1,5 @@
 package InventoryCount;
 
-
 public class InventoryCountActions {
 	
 	InventoryCount page = new InventoryCount();

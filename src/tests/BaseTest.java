@@ -1,6 +1,5 @@
 package tests;
 
-
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,9 +17,7 @@ public class BaseTest {
 
 	public static AndroidDriver<MobileElement> driver;
 
-	
-	public BaseTest() {
-		
+	public BaseTest() {	
 		PageFactory.initElements(new AppiumFieldDecorator(BaseTest.driver), this);
 	}
 	
