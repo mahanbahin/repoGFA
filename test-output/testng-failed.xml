@@ -3,13 +3,25 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="tests.InventoryCountTests">
+      <class name="tests.LoginTest">
         <methods>
-          <include name="driverSetUp"/>
           <include name="beforeClass"/>
-          <include name="goToFirstCount"/>
+          <include name="startDevice"/>
+          <include name="loginToApp"/>
         </methods>
-      </class> <!-- tests.InventoryCountTests -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.InventoryCountTest">
+        <methods>
+          <include name="goToFirstCount"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.InventoryCountTest -->
+      <class name="tests.DashboardTest">
+        <methods>
+          <include name="navigateToInvoentoryCounts"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- tests.DashboardTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

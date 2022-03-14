@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import InventoryCount.InventoryCountActions;
 
-public class InventoryCountTest extends BaseTest {
+public class InventoryCountTest {
 	InventoryCountActions inventoryCountActions;
 	
 	@BeforeClass
